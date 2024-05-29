@@ -57,9 +57,11 @@ var vm = new Vue({
             var re = /^1[3-9]\d{9}$/;
             if (re.test(this.mobile)) {
                 this.mobile_error = false;
+
             } else {
                 this.mobile_error = true;
             }
+
         },
         //检查密码
         check_password:function () {
